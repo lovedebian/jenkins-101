@@ -14,6 +14,8 @@ pipeline {
                 sh '''
                 cd myapp
                 pip install -r requirements.txt
+                uname -a
+                whoami
                 '''
             }
         }
@@ -23,7 +25,7 @@ pipeline {
                 sh '''
                 cd myapp
                 python3 hello.py
-                python3 hello.py --name=Brad
+                python3 hello.py --name=Huhu
                 '''
             }
         }
